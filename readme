@@ -1,0 +1,45 @@
+# Sistema de Biblioteca
+
+Este é um sistema de biblioteca simples desenvolvido em Python, utilizando SQLite para armazenamento de dados e Tkinter para a interface gráfica.
+
+## Funcionalidades
+
+- Adicionar autores
+- Adicionar livros
+- Registrar empréstimos
+- Visualizar todos os livros cadastrados
+- Visualizar todos os empréstimos realizados
+
+## Pré-requisitos
+
+- Python 3.x
+- Biblioteca Tkinter (normalmente já incluída nas instalações padrão do Python)
+- SQLite (também incluído no Python por padrão)
+
+## Estrutura do Banco de Dados
+
+O banco de dados `biblioteca.db` contém as seguintes tabelas:
+
+1. **Autores**
+   - `AutorID`: Identificador único do autor (gerado automaticamente)
+   - `Nome`: Nome do autor
+   - `Nacionalidade`: Nacionalidade do autor
+
+2. **Livros**
+   - `LivroID`: Identificador único do livro (gerado automaticamente)
+   - `Titulo`: Título do livro
+   - `AnoPublicacao`: Ano de publicação do livro
+   - `Genero`: Gênero do livro
+
+3. **Emprestimos**
+   - `EmprestimoID`: Identificador único do empréstimo (gerado automaticamente)
+   - `LivroID`: ID do livro emprestado
+   - `DataEmprestimo`: Data em que o livro foi emprestado
+   - `DataDevolucao`: Data em que o livro deve ser devolvido
+   - `NomeUsuario`: Nome do usuário que realizou o empréstimo
+
+## Instalação
+
+1. Clone este repositório:
+   git clone https://github.com/seu_usuario/sistema-biblioteca.git
+   cd sistema-biblioteca
